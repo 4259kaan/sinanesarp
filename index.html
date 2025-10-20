@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BY SİNAN - İletişim</title>
+  <style>
+    :root{
+      --bg:#000000; /* siyah arka plan */
+      --accent:#e67e22; /* logo turuncusuna yakın */
+      --muted:#bfbfbf;
+      --card-bg: rgba(255,255,255,0.04);
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    html,body{height:100%;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color: #fff;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container{
+      width:100%;
+      max-width:980px;
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:28px;
+      align-items:center;
+    }
+    .hero{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding:36px;
+      border-radius:14px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.6);
+      display:flex;
+      gap:24px;
+      align-items:center;
+    }
+    .logo-wrap{
+      width:170px;
+      height:170px;
+      flex:0 0 170px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--glass);
+      border-radius:12px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,0.04);
+    }
+    .logo-wrap img{max-width:100%;height:auto;display:block}
+    .brand{
+      flex:1;
+    }
+    h1{
+      margin:0 0 6px 0;
+      font-size:34px;
+      letter-spacing:2px;
+      color:var(--accent);
+    }
+    p.lead{
+      margin:0;
+      color:var(--muted);
+      font-size:15px;
+    }
+    .card{
+      background:var(--card-bg);
+      padding:22px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .contact h3{
+      margin:0 0 12px 0;
+      font-size:18px;
+      color:var(--accent);
+    }
+    .item{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+    .item svg{flex:0 0 22px}
+    .item a{color:#fff;text-decoration:none}
+    .muted{color:var(--muted);font-size:14px}
+    .instagram{margin-top:10px;display:inline-block;padding:8px 12px;border-radius:8px;background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03)}
+
+    /* responsive */
+    @media (max-width:880px){
+      .container{grid-template-columns:1fr;}
+      .logo-wrap{width:110px;height:110px;flex:0 0 110px}
+      h1{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero card">
+      <div class="logo-wrap">
+        <!-- Logo: aynı klasöre logobysinan.jpg adıyla koyun -->
+        <img src="logobysinan.jpg" alt="BY SİNAN logo">
+      </div>
+      <div class="brand">
+        <h1>BY SİNAN</h1>
+        <p class="lead">Eşarp Mağazaları — Zarif, kaliteli ve şık eşarplar</p>
+        <p class="muted" style="margin-top:12px">Web sayfanız için basit, marka renklerine uyumlu iletişim kartı.</p>
+      </div>
+    </div>
+
+    <aside class="card contact">
+      <h3>İletişim</h3>
+      <div class="item">
+        <!-- phone -->
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 5.5A2.5 2.5 0 015.5 3h1A2.5 2.5 0 019 5.5v1A2.5 2.5 0 016.5 9H6a1 1 0 00-.9.55L4.2 12.4a16 16 0 006.4 6.4l2.85-1.4A1 1 0 0014 17v-.5A2.5 2.5 0 0116.5 14h1A2.5 2.5 0 0120 16.5v1A2.5 2.5 0 0117.5 20h-1A17 17 0 013 5.5z"/></svg>
+        <div>
+          <div class="muted">Tel</div>
+          <div><a href="tel:+905073681825">0507 368 18 25</a></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <!-- email -->
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 8.5v7A2 2 0 005 17.5h14a2 2 0 002-2v-7a2 2 0 00-2-2H5a2 2 0 00-2 2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 8.5l-9 6-9-6"/></svg>
+        <div>
+          <div class="muted">E‑posta</div>
+          <div><a href="mailto:sinan@sinanesarp.com">sinan@sinanesarp.com</a></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <!-- instagram -->
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor"><rect x="3" y="3" width="18" height="18" rx="5" ry="5" stroke-width="1.5"/><path d="M16.5 7.5h.01" stroke-width="1.5"/><path d="M12 7.5a4.5 4.5 0 100 9 4.5 4.5 0 000-9z" stroke-width="1.5"/></svg>
+        <div>
+          <div class="muted">Instagram</div>
+          <div><a class="instagram" href="https://instagram.com/bysinanesarpları" target="_blank" rel="noopener">@bysinanesarpları</a></div>
+        </div>
+      </div>
+
+      <p class="muted" style="margin-top:14px;font-size:13px">Adres ve çalışma saatleri için lütfen arayın veya e‑posta gönderin.</p>
+
+    </aside>
+  </div>
+</body>
+</html>
