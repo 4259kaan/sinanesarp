@@ -1,0 +1,9 @@
+# Tüm arama motorlarına izin ver
+User-agent: *
+
+# Bu sayfaları taramasınlar (örnek)
+Disallow: /admin/
+Disallow: /login/
+
+# Sitemap dosyasının yeri
+Sitemap: https://www.sinanesarp.com/sitemap.xml
